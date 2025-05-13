@@ -1,5 +1,5 @@
 {
-    "name": "blog",
+    "name": "blog-server",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
@@ -7,5 +7,8 @@
     },
     "author": "",
     "license": "ISC",
-    "description": ""
+    "description": "",
+    "devDependencies": {
+        "typescript": "^5.8.3"
+    }
 }

@@ -1,0 +1,12 @@
+FROM node:latest
+
+WORKDIR /app
+
+COPY package*.json ./
+RUN npm install
+
+# mount code and nodemon for hot-reload
+RUN npm install -g ts-node nodemon
+
+EXPOSE 4000
+CMD ["npm", "run", "dev"]
